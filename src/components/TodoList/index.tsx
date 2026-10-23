@@ -46,7 +46,7 @@ const TodoList = ({ todoList, toggleTodoCompleted, setFilter, filter, clearCompl
                   <img
                     src={`${import.meta.env.BASE_URL}images/icon-cross.svg`}
                     alt="Ícone de cruz"
-                    className="w-4 h-4"
+                    className="cursor-pointer w-4 h-4"
                   />
                 </button>
               </div>
