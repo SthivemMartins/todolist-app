@@ -3,6 +3,7 @@ import { themeConfig } from "../../contexts/theme";
 import { ThemeContext } from "../../contexts/ThemeContext";
 import type { Todo } from "../../hooks/useTodo";
 import IconCheck from '/images/icon-check.svg';
+import IconCross from '/images/icon-cross.svg';
 
 interface TodoListProps {
   todoList: Todo[];
@@ -43,7 +44,7 @@ const TodoList = ({ todoList, toggleTodoCompleted, setFilter, filter, clearCompl
                     ? "text-neutral-light-grayish-blue-hover"
                     : "text-neutral-very-dark-grayish-blue-hover"
                     } `}>
-                  <img src="/images/icon-cross.svg" alt="Ícone de cruz" className="w-4 h-4" />
+                  <img src={IconCross} alt="Ícone de cruz" className="w-4 h-4" />
                 </button>
               </div>
 
